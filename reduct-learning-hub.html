@@ -112,7 +112,7 @@ a.tag:hover .tag-arr{opacity:1}
 .sc-bullets li{font-size:14px;line-height:1.6;color:var(--txt);padding-left:18px;position:relative}
 .sc-bullets li::before{content:'—';position:absolute;left:0;color:var(--lt);font-size:13px}
 
-/* QUESTION LIST (inside How Reduct Helps) */
+/* QUESTION LIST (inside How Reduct helps) */
 .sc-q-list{background:var(--bg);border:1px solid var(--bdr);border-radius:8px;padding:14px 16px 14px 36px;list-style:disc;margin:4px 0}
 .sc-q-list li{font-size:13.5px;color:var(--mu);line-height:1.65;padding-left:0}
 .sc-q-list li::before{display:none}
@@ -521,9 +521,9 @@ function rScenario(){
     tocItems.push(['#out','Outcome']);
   }
 
-  // How Reduct Helps (always present)
-  secs+=`<div class="sc-sec" id="helps"><div class="sec-h-lg">How Reduct Helps</div><div class="sec-body">${renderHelps(sc.helps)}</div></div>`;
-  tocItems.push(['#helps','How Reduct Helps']);
+  // How Reduct helps (always present)
+  secs+=`<div class="sc-sec" id="helps"><div class="sec-h-lg">How Reduct helps</div><div class="sec-body">${renderHelps(sc.helps)}</div></div>`;
+  tocItems.push(['#helps','How Reduct helps']);
 
   // Features Used
   secs+=`<div class="sc-sec" id="feat"><div class="sec-h">Features Used</div><div class="tags">${sc.features.map(f=>tagLink(f)).join('')}</div></div>`;
