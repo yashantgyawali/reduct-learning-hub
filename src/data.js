@@ -50,22 +50,6 @@ export const STAGES = [
           },
         ],
       },
-      {
-        id: 2,
-        title:
-          "Does the body-cam match the officer's statement in the affidavit?",
-        situation:
-          "You have the Gerstein affidavit — the officer's written statement of probable cause. You want to check whether what they wrote matches what's actually on the body-cam.",
-        problem:
-          "Manually cross-referencing a written affidavit with hours of video is tedious. You're looking for specific moments — but you don't know exactly where they are.",
-        helps: [
-          { head: "Cross-reference the affidavit" },
-          "Take the key claims from the affidavit and run keyword searches in Reduct against your transcribed body-cam footage. Reduct surfaces the exact moments where those words (or related words) appear. You can jump straight to that moment in the video, watch it, and decide if the story holds up.",
-        ],
-        features: ["Keyword Search", "Fuzzy Search", "Transcript Navigation"],
-        outcome:
-          "In 15 minutes, you've cross-referenced the affidavit against the footage. If there's a contradiction, you've found it. If it holds up, you know that too. Either way, you're asking sharper questions tomorrow.",
-      },
     ],
   },
   {
