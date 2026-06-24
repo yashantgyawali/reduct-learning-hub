@@ -13,6 +13,8 @@ export const STAGES = [
         helps: [
           { head: "Upload your discovery" },
           "Throw all your discovery to Reduct. Even better if we can work with your IT department to set up integrations with your case management system, so that everything that comes to your case management system, email can automatically come in to Reduct.",
+          { head: "Keyword Search" },
+          "Quickly read what's in the Gerstein affidavit (statement of probable cause by the officer) to check out their story. And run fuzzy search with similar search keywords to find similar instances across the discovery files (including 911 calls, body-cam, and other files).",
           { head: "Run a batch summary" },
           "With all your files in a single cloud platform, you can run a batch summary with targeted questions that are relevant for a probable cause hearing. The goal of a batch summary is not deep analysis, but rather fast orientation.",
           "You want to know the shape of the case before you walk in.",
@@ -35,6 +37,7 @@ export const STAGES = [
         ],
         features: [
           "Upload",
+          "Keyword Search",
           "Batch Summarize",
           "Custom Summary",
           "Collaboration in Reduct",
@@ -55,8 +58,10 @@ export const STAGES = [
           "You have the Gerstein affidavit — the officer's written statement of probable cause. You want to check whether what they wrote matches what's actually on the body-cam.",
         problem:
           "Manually cross-referencing a written affidavit with hours of video is tedious. You're looking for specific moments — but you don't know exactly where they are.",
-        helps:
+        helps: [
+          { head: "Cross-reference the affidavit" },
           "Take the key claims from the affidavit and run keyword searches in Reduct against your transcribed body-cam footage. Reduct surfaces the exact moments where those words (or related words) appear. You can jump straight to that moment in the video, watch it, and decide if the story holds up.",
+        ],
         features: ["Keyword Search", "Fuzzy Search", "Transcript Navigation"],
         outcome:
           "In 15 minutes, you've cross-referenced the affidavit against the footage. If there's a contradiction, you've found it. If it holds up, you know that too. Either way, you're asking sharper questions tomorrow.",
@@ -356,6 +361,8 @@ export const _D =
 
 export const FEATURE_LINKS = {
   Upload: "https://help.reduct.video/en/articles/upload-files-into-reduct",
+  Search:
+    "https://help.reduct.video/en/articles/search-for-words-and-phrases-in-recordings",
   "Batch Summarize":
     "https://help.reduct.video/en/articles/ai-summaries#batch-summarize",
   "Custom Summary":
