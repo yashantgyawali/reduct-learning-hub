@@ -12,13 +12,13 @@ export const STAGES = [
         problem: "",
         helps: [
           { head: "Import all your discovery" },
-          "Throw all your discovery to Reduct. Even better if we can work with your IT department to set up integrations with your case management system, so that everything that comes to your case management system or your cloud storage solution can automatically come in to Reduct.",
+          "Throw all your discovery to Reduct. Even better if we can work with your IT department to set up integrations with your case management system, so that everything that comes to your case management system or your cloud storage solution can automatically come into Reduct.",
           { head: "Search for keywords" },
           "Quickly read what's in the Gerstein affidavit (statement of probable cause by the officer) to check out their story. And run fuzzy search with similar search keywords to find similar instances across the discovery files (including 911 calls, body-cam, and other files).",
           { head: "Run a batch summary" },
           "With all your files in a single cloud platform, you can run a batch summary with targeted questions that are relevant for a probable cause hearing. The goal of a batch summary is not deep analysis, but rather fast orientation.",
           "You want to know the shape of the case before you walk in.",
-          { head: "Get answers on your custom questions" },
+          { head: "Get answers to your custom questions" },
           "Instead of using a generic summary, you'd want your summaries to be organized by what you are trying to find out. So you can use a custom question template (for probable cause hearings) to get a headstart.",
           [
             "What was the stated reason for the stop, approach, or arrest?",
