@@ -19,7 +19,7 @@ export const STAGES = [
           "With all your files in a single cloud platform, you can run a batch summary with targeted questions that are relevant for a probable cause hearing. The goal of a batch summary is not deep analysis, but rather fast orientation.",
           "You want to know the shape of the case before you walk in.",
           { head: "Custom question template" },
-          "Instead of using a generic sumamary, you'd want your summaries to be organized by what you are trying to find out. So you can use a custom question template (for probable cause hearings) to get a headstart.",
+          "Instead of using a generic summary, you'd want your summaries to be organized by what you are trying to find out. So you can use a custom question template (for probable cause hearings) to get a headstart.",
           [
             "What was the stated reason for the stop, approach, or arrest?",
             "What specific facts does this file state as justification for probable cause?",
