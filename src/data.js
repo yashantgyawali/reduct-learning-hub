@@ -370,7 +370,8 @@ export const FEATURE_LINKS = {
   "Collaboration in Reduct":
     "https://help.reduct.video/en/articles/collaboration-in-reduct",
   "Summary Review": _D,
-  "Keyword Search": _D,
+  "Keyword Search":
+    "https://help.reduct.video/en/articles/search-for-words-and-phrases-in-recordings",
   "Fuzzy Search": _D,
   "Transcript Navigation": _D,
   Comments: _D,
