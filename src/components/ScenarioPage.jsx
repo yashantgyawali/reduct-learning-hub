@@ -137,7 +137,7 @@ export default function ScenarioPage({ sid, scid, nav }) {
         )}
 
         <div className="sc-sec" id="helps">
-          <div className="sec-h-lg">How Reduct Helps</div>
+          <div className="sec-h-lg">How Reduct helps</div>
           <div className="sec-body">
             <HelpsContent helps={sc.helps} />
           </div>
