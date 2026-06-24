@@ -11,14 +11,14 @@ export const STAGES = [
           "You just got the case, and the discovery dropped just now. The probable cause hearing is tomorrow morning. You have hours of footage and just a night to prepare, so watching everything isn't an option. You need to know what happened, fast, so you can question the officer.\n\nYou can read through the main documents, like police reports and affidavits, but they tell the side of the story that played out perfectly for them. The main job is to find contradictions and ask good questions that will make the officer uncomfortable and lock them into a story on the record on day one of the case. And you need the shape of the story before you can ask good questions.\n\nHowever, with so much discovery and a night to prepare, it's practically impossible.\n\nIdeally, it would be nice to walk into probable cause with a specific, chronological event list and a good mental note of what exactly happened. And even better if you can have a good list of questions to ask the officer.\n\nAnd Reduct helps you do just that.",
         problem: "",
         helps: [
-          { head: "Upload your discovery" },
+          { head: "Import all your discovery" },
           "Throw all your discovery to Reduct. Even better if we can work with your IT department to set up integrations with your case management system, so that everything that comes to your case management system or your cloud storage solution can automatically come in to Reduct.",
-          { head: "Keyword Search" },
+          { head: "Search for keywords" },
           "Quickly read what's in the Gerstein affidavit (statement of probable cause by the officer) to check out their story. And run fuzzy search with similar search keywords to find similar instances across the discovery files (including 911 calls, body-cam, and other files).",
           { head: "Run a batch summary" },
           "With all your files in a single cloud platform, you can run a batch summary with targeted questions that are relevant for a probable cause hearing. The goal of a batch summary is not deep analysis, but rather fast orientation.",
           "You want to know the shape of the case before you walk in.",
-          { head: "Custom question template" },
+          { head: "Get answers on your custom questions" },
           "Instead of using a generic summary, you'd want your summaries to be organized by what you are trying to find out. So you can use a custom question template (for probable cause hearings) to get a headstart.",
           [
             "What was the stated reason for the stop, approach, or arrest?",

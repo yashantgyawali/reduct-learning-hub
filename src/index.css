@@ -109,7 +109,7 @@ a.tag:hover .tag-arr{opacity:1}
 .sc-q-list li{font-size:13.5px;color:var(--mu);line-height:1.65;padding-left:0}
 .sc-q-list li::before{display:none}
 .q-list-wrap{position:relative}
-.copy-btn{position:absolute;top:8px;right:8px;width:28px;height:28px;border:none;border-radius:6px;background:transparent;color:var(--lt);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;padding:0}
+.copy-btn{position:absolute;top:8px;right:8px;z-index:1;width:28px;height:28px;border:none;border-radius:6px;background:transparent;color:var(--lt);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s,color .15s;padding:0}
 .copy-btn:hover{background:var(--bdr);color:var(--mu)}
 .copy-btn.copied{color:#16A34A}
 

@@ -1,11 +1,6 @@
 import { useState } from 'react'
 
-const svgProps = {
-  width: 14, height: 14, viewBox: '0 0 24 24',
-  fill: 'none', stroke: 'currentColor',
-  strokeLinecap: 'round', strokeLinejoin: 'round',
-  style: { pointerEvents: 'none', display: 'block' },
-}
+const iconStyle = { pointerEvents: 'none', position: 'absolute', inset: 0, transition: 'opacity .15s' }
 
 function QuestionList({ items }) {
   const [copied, setCopied] = useState(false)
@@ -20,14 +15,15 @@ function QuestionList({ items }) {
   return (
     <div className="q-list-wrap">
       <button className={`copy-btn${copied ? ' copied' : ''}`} onClick={copyList} title="Copy questions">
-        {/* Both icons always in DOM — no swap flicker. CSS toggles visibility. */}
-        <svg {...svgProps} strokeWidth="2" style={{ ...svgProps.style, opacity: copied ? 0 : 1, position: 'absolute', transition: 'opacity .15s' }}>
-          <rect x="9" y="9" width="13" height="13" rx="2" />
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-        </svg>
-        <svg {...svgProps} strokeWidth="2.5" style={{ ...svgProps.style, opacity: copied ? 1 : 0, transition: 'opacity .15s' }}>
-          <polyline points="20 6 9 17 4 12" />
-        </svg>
+        <span style={{ position: 'relative', width: 14, height: 14, display: 'flex' }}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ ...iconStyle, opacity: copied ? 0 : 1 }}>
+            <rect x="9" y="9" width="13" height="13" rx="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ ...iconStyle, opacity: copied ? 1 : 0 }}>
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </span>
       </button>
       <ul className="sc-bullets sc-q-list">
         {items.map((li, i) => <li key={i}>{li}</li>)}
